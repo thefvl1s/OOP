@@ -1,0 +1,14 @@
+#include "resource.h"
+#include <windows.h>
+
+#pragma code_page(65001)
+
+IDD_DIALOG1 DIALOGEX 0, 0, 200, 150
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Робота 1"
+FONT 8, "MS Sans Serif"
+BEGIN
+LISTBOX         IDC_LIST1, 10, 10, 180, 100, LBS_STANDARD
+DEFPUSHBUTTON   "Так", IDOK, 40, 120, 50, 14
+PUSHBUTTON      "Відміна", IDCANCEL, 110, 120, 50, 14
+END
